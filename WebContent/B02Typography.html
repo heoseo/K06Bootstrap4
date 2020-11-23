@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 
+        * 뷰포트(Viewport)
+         - width=device-width
+            : 단말기(모바일장치)의 화면폭에 따라 페이지의 가로폭을 재설정해줌.
+            : 디바이스에 따라 스케일이 달라지는데 이를 100%스케일해서
+                CSS픽셀들로 계산된 화면의 폭을 의미한다.
+         - initial-scale=1.0
+            : 페이지가 처음 브라우저에 로딩된 초기 줌 레벨을 지정한다.
+            : 즉, 초기확대값을 설정하게된다.
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B02Typography.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 
+        * 부트스트랩의 컨테이너
+            - container : 반응형 변동폭 컨테이너를 제공한다.
+                        : 화면의 좌우측에 약간의 공백이 생긴다.
+
+     -->
+    <div class="container">
+        <h2>Typography(텍스트효과)</h2>
+        <h2>h2 heading <small>h2의 작은제목</small></h2>
+        <h3>h3 heading <small>h3의 작은제목</small></h3><br>
+
+
+        <h1>Highlight Text</h1>    
+        <p>Use the mark element to <mark>형광펜효과</mark> text.</p><br>
+
+
+        <h1>Abbreviations</h1>
+        <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><br>
+
+
+        <h1>Description Lists - dl/dt/dd 태그의 효과</h1>    
+        <p>The dl element indicates a description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>타이틀</dt>
+            <dd>- 설명구문 삽입</dd>
+        </dl>     <br>
+
+
+        <h1>Keyboard Inputs</h1>
+        <p>문자열을 키보드와 같이 표현함. 단축키 표현에 유용함.</p>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p><br>
+
+
+        <h2>pre태그 적용하기</h2>
+        <p>pre태그는 Text를 편집한 그대로 브라우저에 출력된다.</p>
+        <pre>
+            [서울=뉴시스] 표주연 기자 = 박영선 중소벤처기업부(중기부) 장관은 18일 오후 4시 블록체인 철학에 공감하는 청년들이 설립한 강남구 소재의 공동주거·업무공간 ‘논스(nonce)’를 방문했다.
+
+이날 현장방문은 블              록체인 분야의 최근 동향을 파악·공유하고 블록체인 스타트업 관계자 및 전문가들의 의견을 듣기 위해서다.
+
+중기부는 세계 최    (<-tab!)초로 기업 단위가 아닌 지역 단위로 블록체인 규제를 패키지로 완화하는 규제자유특구를 부산에 2번이나 지정했다. 그동안 블록체인 기업의 창업과 성장을 위해 사업화자금, 벤처투자, 융자, 보증, 연구개발 등을 지원했다.
+
+이날 박영선 장관은 블록체인 기술을 다른 비대면 분야와 접목해 유용하게 활용할 수 있는 방안을 집중적으로 논의했다.
+
+박영선 중기부 장관은 “비대면이 확산된 포스트 코로나 시대에서 블록체인 기술은 더욱 중요해질 것”이라며 “오늘 간담회가 블록체인 유니콘기업 탄생과 블록체인 규제자유특구 활성화의 출발점이 되기를 바란다"고 전했다.          g
+        </pre><br>
+
+
+        <h2>Typography 정렬하기</h2>
+        <p class="text-left">Left-aligned text.</p>
+        <p class="text-right">Right-aligned text.</p>      
+        <p class="text-center">Center-aligned text.</p>
+        <p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>      
+        <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+        <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p><br>
+
+
+    </div>
+</body>
+</html>
